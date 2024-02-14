@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+/* Сброс стилей */
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+ul,
+ol {
+   padding: 0;
+   list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+a {
+   display: inline-block;
+   color: inherit;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+button {
+   border: none;
+   background: none;
+   padding: 0;
+   cursor: pointer;
+}
+
+img {
+   max-width: 100%;
+}
+
+body {
+   font-family: "Noto Sans Mono", monospace;
+   font-weight: 400;
+   font-size: 14px;
+   background: linear-gradient(21deg, #dd03e4, #5611ec) center;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
