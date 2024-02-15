@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../interfaces/interfaces';
+import { Users } from '../interfaces/interfaces';
 import { Observable } from 'rxjs';
 
 
@@ -12,7 +12,7 @@ export class UserService {
 
    constructor(private http: HttpClient) { }
 
-   getUsers(): Observable<any> {
-      return this.http.get<any>(this.apiUrl);
+   getUsers(): Observable<Users[]> {
+      return this.http.get<Users[]>(this.apiUrl);
    }
 }

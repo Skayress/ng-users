@@ -1,3 +1,12 @@
+export interface Users {
+	page: number;
+	per_page: number;
+	total: number;
+	total_pages: number;
+	data: User[];
+	support?: any;
+}
+
 export interface User {
    id: number;
    email: string;
